@@ -15,4 +15,6 @@ STAR --runThreadN 20 --genomeDir ~/sicinskilab/reference_data/STARgenomeMM10 \
  --outSAMstrandField intronMotif \
  --outSAMtype BAM SortedByCoordinate \
  --outFilterIntronMotifs RemoveNoncanonical \
- --outWigType wiggle --outWigNorm None
+ --outWigType wiggle --outWigNorm None \
+ --quantMode TranscriptomeSAM
+  

@@ -11,7 +11,7 @@ module load star/2.5.4a
 #run the script
 STAR --runThreadN 20 --genomeDir ~/sicinskilab/reference_data/STARgenomeMM10 \
  --readFilesIn $fq \
- --outFileNamePrefix ~/sicinskilab/results/STAR2.5.4a/STARoutput/$fq \
+ --outFileNamePrefix STARoutput/$fq \
  --outSAMstrandField intronMotif \
  --outSAMtype BAM SortedByCoordinate \
  --outFilterIntronMotifs RemoveNoncanonical \

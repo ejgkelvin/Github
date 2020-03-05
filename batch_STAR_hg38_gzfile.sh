@@ -10,7 +10,7 @@ module load star/2.5.4a
 
 #run the script
 STAR --runThreadN 20 --genomeDir ~/sicinskilab/reference_data/STARgenomeHG38 \
- --readFilesCommand zcat $fq \
+ --readFilesCommand zcat \
  --readFilesIn $fq \
  --outFileNamePrefix STARoutput/$fq \
  --outSAMstrandField intronMotif \

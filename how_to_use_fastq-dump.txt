@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH -p short
+#SBATCH -t 0-12:00
+#SBATCH -c 8
+#SBATCH -N 8
+#SBATCH --mem=12G
+#SBATCH -o %j.out
+#SBATCH -e %j.err
+#SBATCH --mail=type=END
+#SBATCH --mail-user=chen_chu@hms.harvard.edu
+
+module load gcc/6.2.0
+module load sratoolkit/2.9.0
+
+fastq-dump SRR5478123 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+fastq-dump SRR5478124 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+fastq-dump SRR5478125 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+fastq-dump SRR5478126 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+fastq-dump SRR5478127 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+fastq-dump SRR5478128 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+fastq-dump SRR5478129 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+fastq-dump SRR5478130 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL2Input_1
+
+fastq-dump SRR5478115 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL4_1
+fastq-dump SRR5478116 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL4_1
+fastq-dump SRR5478117 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL4_1
+fastq-dump SRR5478118 -O /n/data2/dfci/cancerbio/sicinski/raw_data/MLL4_1
